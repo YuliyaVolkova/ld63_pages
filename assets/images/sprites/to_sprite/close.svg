@@ -1,7 +1,8 @@
-<svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="505px" height="403px">
-<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
- d="M505.006,49.335 L494.443,59.907 L475.074,40.523 L455.706,59.907 L445.142,49.335 L464.511,29.950 L445.142,10.566 L455.706,-0.007 L475.074,19.378 L494.443,-0.007 L505.006,10.566 L485.638,29.950 L505.006,49.335 ZM-0.000,401.505 L298.789,401.505 L298.789,403.000 L-0.000,403.000 L-0.000,401.505 Z"/>
-</svg>
+export default {
+      id: "close-usage",
+      viewBox: "0 0 505 403",
+      url: __webpack_public_path__ + "C:\\Users\\Yuliya\\webprojects\\lansh_studio\\src\\assets\\images\\sprites\\to_sprite\\close.svg",
+      toString: function () {
+        return this.url;
+      }
+    }
