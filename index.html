@@ -11,29 +11,16 @@
   <body>
     <!--[if lt IE 8]> <p class="chromeframe">Похоже, что ты используешь устаревший браузер, друг. Пожалуйста, <a href="http:// browsehappy.com/">скачай новый браузер абсолютно бесплатно</a> или <a href="http://www.google.com/chromeframe/?redirect=true">активируй Google Chrome Frame</a></p> <![endif]-->
     <div class="wrapper">
-      <header class="hero">
+      <header class="section hero" data-section="1-section">
         <div class="container">
-          <nav class="hamburg-menu"><a class="hamburg-menu__link" id="openMenu" href="">
+          <nav class="hamburg-menu"><a class="hamburg-menu__open-link" id="openMenu" href="javascript:void(0)">
               <svg class="menu-svg" width="78px" height="35px">
                 <use xlink:href="./assets/images/sprites/sprite.svg#menu"></use>
-              </svg>Меню</a>
-            <script type="template/text" id="menuTmplt"><a class="hamburg-menu__close" id="closeMenu" href="">
-                <svg class="close-svg" width="undefined" height="undefined">
-                  <use xlink:href="./assets/images/sprites/sprite.svg#close"></use>
-                </svg></a>
-              <ul class="hamburg-menu__list">
-                <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="">Главная</a></li>
-                <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="">Рулонный газон</a></li>
-                <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="">Наши услуги</a></li>
-                <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="">Портфолио</a></li>
-                <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="">Акция - проект бесплатно</a></li>
-                <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="">О компании</a></li>
-                <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="">Бесплатно</a></li>
-              </ul>
-            </script>
-          </nav>
-          <div class="logo"><a class="logo__link" href="/"><img class="logo-img" src="./assets/images/decor/astra.png" alt="Астра - студия ландшафтного дизайна"></a></div>
-          <h1 class="title bg-orange"><span>&nbsp;Ландшафтный дизайн в Самаре &nbsp;от студии Марины Климовских&nbsp;</span></h1><a class="arrowdown-link" id="move2second" href="#2section">
+              </svg>Меню</a></nav>
+          <div class="logo"><a class="logo__link" href="#2-section"><img class="logo-img" src="./assets/images/decor/astra.png" alt="Астра - студия ландшафтного дизайна"></a></div>
+          <div class="main-title">
+            <h1 class="title bg-orange">&nbsp;Ландшафтный дизайн в Самаре&nbsp;</h1><span class="title bg-orange">&nbsp;от студии Марины Климовских&nbsp;</span>
+          </div><a class="arrowdown-link" id="move2second" href="#2-section">
             <svg class="arrowdown-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85px" height="85px" viewBox="0 0 16 16">
               <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
                 <g fill="#FFF" transform="translate(-48.000000, -144.000000)">
@@ -43,81 +30,83 @@
             </svg></a>
         </div>
       </header>
-      <section class="calculation">
+      <section class="section calculation" data-section="2-section">
         <header class="calculation__title">
           <div class="container">
             <h2 class="title lh-1-34">Хит продаж - Рулонный газон в Самаре</h2>
           </div>
         </header>
         <div class="calculation__wrapper">
-          <div class="rulon-decor" style="background-image: url('./assets/images/decor/back.png'); background-repeat: no-repeat;"></div>
-          <div class="container container_fxdir-row">
-            <div class="calculation__left">
-              <div class="promo-card">
-                <h3 class="card-title"><span>Преимущества рулонного газона</span></h3>
-                <div class="promo-card__content">
-                  <div class="promo-card__description">
-                    <ul class="promo-card__list">
-                      <li class="promo-card__item">
-                        <svg class="check-svg" width="40px" height="40px">
-                          <use xlink:href="./assets/images/sprites/sprite.svg#check"></use>
-                        </svg>
-                        <div class="promo-text"><span>Газон за 1 день - cразу после укладки ровное и густое травяное покрытие</span></div>
-                      </li>
-                      <li class="promo-card__item">
-                        <svg class="check-svg" width="40px" height="40px">
-                          <use xlink:href="./assets/images/sprites/sprite.svg#check"></use>
-                        </svg>
-                        <div class="promo-text"><span>2 года - свобода от сорняков, практически не требует прополки и применения гербицидов</span></div>
-                      </li>
-                      <li class="promo-card__item">
-                        <svg class="check-svg" width="40px" height="40px">
-                          <use xlink:href="./assets/images/sprites/sprite.svg#check"></use>
-                        </svg>
-                        <div class="promo-text"><span>10 тысяч стеблей на м2 - высокая плотность травяного покрова</span></div>
-                      </li>
-                    </ul>
+          <div class="rulon-decor"><img class="rulon-decor__img" src="./assets/images/decor/bg/rulon.png" alt="Устройство газонов от 250 руб/м2"></div>
+          <div class="service__descrip">
+            <div class="container container_fxdir-row">
+              <div class="calculation__left">
+                <div class="promo-card">
+                  <h3 class="card-title"><span>Преимущества рулонного газона</span></h3>
+                  <div class="promo-card__content">
+                    <div class="promo-card__description">
+                      <ul class="promo-card__list">
+                        <li class="promo-card__item">
+                          <svg class="check-svg" width="40px" height="40px">
+                            <use xlink:href="./assets/images/sprites/sprite.svg#check"></use>
+                          </svg>
+                          <div class="promo-text"><span>Газон за 1 день - cразу после укладки ровное и густое травяное покрытие</span></div>
+                        </li>
+                        <li class="promo-card__item">
+                          <svg class="check-svg" width="40px" height="40px">
+                            <use xlink:href="./assets/images/sprites/sprite.svg#check"></use>
+                          </svg>
+                          <div class="promo-text"><span>2 года - свобода от сорняков, практически не требует прополки и применения гербицидов</span></div>
+                        </li>
+                        <li class="promo-card__item">
+                          <svg class="check-svg" width="40px" height="40px">
+                            <use xlink:href="./assets/images/sprites/sprite.svg#check"></use>
+                          </svg>
+                          <div class="promo-text"><span>10 тысяч стеблей на м2 - высокая плотность травяного покрова</span></div>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-                <div class="promo-card__price">
-                  <div class="promo-card__price-title"><span>Цена материала от</span></div>
-                  <div class="promo-card__price-amount"><span>99 руб/м2</span></div>
+                  <div class="promo-card__price">
+                    <div class="promo-card__price-title"><span>Цена материала от</span></div>
+                    <div class="promo-card__price-amount"><span>99 руб/м2</span></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="calculation__right">
-              <form id="order-calculation" method="POST" action="./script.php">
-                <h3 class="card-title">Закажите бесплатный расчет</h3>
-                <div class="form-inner">
-                  <div class="form-row">
-                    <input class="input" type="text" name="name" placeholder="Имя">
-                    <svg class="user-svg" width="36px" height="44px">
-                      <use xlink:href="./assets/images/sprites/sprite.svg#user"></use>
-                    </svg>
+              <div class="calculation__right">
+                <form id="order-calculation" method="POST" action="./script.php">
+                  <h3 class="card-title">Закажите бесплатный расчет</h3>
+                  <div class="form-inner">
+                    <div class="form-row">
+                      <input class="input" type="text" name="name" placeholder="Имя">
+                      <svg class="user-svg" width="36px" height="44px">
+                        <use xlink:href="./assets/images/sprites/sprite.svg#user"></use>
+                      </svg>
+                    </div>
+                    <div class="form-row">
+                      <input class="input" type="tel" name="phone" placeholder="Телефон">
+                      <svg class="phone-svg" width="31px" height="44px">
+                        <use xlink:href="./assets/images/sprites/sprite.svg#phone"></use>
+                      </svg>
+                    </div>
+                    <div class="form-row">
+                      <input class="input sm-fsz-1-8rem" type="text" name="size" placeholder="Размер участка">
+                      <svg class="size-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50px" height="50px" viewBox="0 0 32 32">
+                        <path d="M32,16l-6-6v4h-2V8h-6V6h4l-6-6l-6,6h4v2H8v6H6v-4l-6,6l6,6v-4h2v6h6v2h-4l6,6l6-6h-4v-2h6v-6h2v4L32,16z M22,22H10V10h12   V22z"></path>
+                      </svg>
+                    </div>
+                    <input class="visually-hidden" name="check_bot" value="">
+                    <div class="submit-bl">
+                      <button class="submit-button bsh-none sm-fsz-1-8rem" type="submit" id="submit"><span>Заказать расчет</span></button>
+                    </div>
                   </div>
-                  <div class="form-row">
-                    <input class="input" type="tel" name="phone" placeholder="Телефон">
-                    <svg class="phone-svg" width="31px" height="44px">
-                      <use xlink:href="./assets/images/sprites/sprite.svg#phone"></use>
-                    </svg>
-                  </div>
-                  <div class="form-row">
-                    <input class="input" type="text" name="size" placeholder="Размер участка">
-                    <svg class="size-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50px" height="50px" viewBox="0 0 32 32">
-                      <path d="M32,16l-6-6v4h-2V8h-6V6h4l-6-6l-6,6h4v2H8v6H6v-4l-6,6l6,6v-4h2v6h6v2h-4l6,6l6-6h-4v-2h6v-6h2v4L32,16z M22,22H10V10h12   V22z"></path>
-                    </svg>
-                  </div>
-                  <input class="visually-hidden" name="check_bot" value="">
-                  <div class="submit-bl">
-                    <button class="submit-button bsh-none" type="submit" id="submit"><span>Заказать расчет</span></button>
-                  </div>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </section>
-<section class="service">
+<section class="section service" data-section="3-section">
   <div class="container">
     <h2 class="title text-color">Наши услуги по благоустройству</h2>
     <ul class="service__list">
@@ -185,7 +174,7 @@
     </ul>
   </div>
 </section>
-      <section class="gallery">
+      <section class="section gallery" data-section="4-section">
         <div class="gallery__open">
           <svg class="camera-svg" width="64px" height="48px">
             <use xlink:href="./assets/images/sprites/sprite.svg#camera"></use>
@@ -193,7 +182,7 @@
           <div class="title mb-25">Наши работы</div><a class="gallery__open-link" href="">Смотреть альбом</a>
         </div>
       </section>
-      <section class="smeta">
+      <section class="section smeta" data-section="5-section">
         <div class="container w-100">
           <div class="smeta__wraper">
             <div class="smeta__map" style="background-image: url('./assets/images/content/map.jpg'); background-repeat: no-repeat;">
@@ -229,8 +218,8 @@
           </div>
         </div>
       </section>
-      <section class="about">
-        <div class="zabor-bg"></div>
+      <section class="section about" data-section="6-section">
+        <div class="zabor-bg"><img class="zabor-img" src="./assets/images/decor/bg/footer_zabor.png" alt="декоративный забор"></div>
         <div class="container">
           <h2 class="title mb-80">О нашей компании</h2>
           <div class="about__card">
@@ -238,21 +227,21 @@
             <div class="about__descrip">
               <div class="about__text"><span>Ландшафтная студия «Астра» работает на рынке озеленения Самарской области с 2001 года. Мы оказываем полный спектр услуг по озеленению приусадебных территорий, коттеджных поселков, парков и городских территорий: от проекта до ухода. За долгие годы работы мы заслужили немало рекомендаций наших клиентов, а также приобрели огромный опыт в нашей работе. На нашем сайте вы можете ознакомиться с нашими работами, а также свзаться со мной лично для получения консультации онлайн.</span></div>
               <div class="about__author"><span>Марина Климовских - основатель компании, биолог</span></div>
-              <div class="about__contacts">
-                <div class="about__whatsApp"><a class="about-whatsApp__link" href="https://api.whatsapp.com/send?phone=15551234567" target="_blank">
-                    <svg class="whatsapp-svg" width="40px" height="40px">
-                      <use xlink:href="./assets/images/sprites/sprite.svg#whatsapp"></use>
-                    </svg><span>Написать в WhatsApp</span></a></div>
-                <div class="about__phone"><a class="about-phone__link" id="callPhone" href="tel:+8-846-231-25-91" target="_blank">
-                    <svg class="call-us-svg" width="40px" height="40px">
-                      <use xlink:href="./assets/images/sprites/sprite.svg#call-us"></use>
-                    </svg><span>Позвонить нам</span></a></div>
-              </div>
             </div>
+          </div>
+          <div class="about__contacts">
+            <div class="about__whatsApp"><a class="about-whatsApp__link" href="https://api.whatsapp.com/send?phone=15551234567" target="_blank">
+                <svg class="whatsapp-svg" width="40px" height="40px">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#whatsapp"></use>
+                </svg><span>Написать в WhatsApp</span></a></div>
+            <div class="about__phone"><a class="about-phone__link" id="callPhone" href="tel:+8-846-231-25-91" target="_blank">
+                <svg class="call-us-svg" width="40px" height="40px">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#call-us"></use>
+                </svg><span>Позвонить нам</span></a></div>
           </div>
         </div>
       </section>
-<section class="footer">
+<section class="section footer" data-section="7-section">
   <div class="container container_footer">
     <div class="footer_wr">
       <div class="footer__left">
@@ -275,4 +264,20 @@
 </section>
     </div>
   <script type="text/javascript" src="/lansh_pages/app/index.bundle.js"></script></body>
+  <nav class="fat-nav"><a class="hamburg-menu__close" id="closeMenu" href="javascript:void(0)">
+      <svg class="close-svg" width="45" height="40">
+        <use xlink:href="./assets/images/sprites/sprite.svg#close"></use>
+      </svg></a>
+    <div class="fat-nav__wrapper">
+      <ul class="hamburg-menu__list">
+        <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="/">Главная</a></li>
+        <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="#2-section">Рулонный газон</a></li>
+        <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="#3-section">Наши услуги</a></li>
+        <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="#4-section">Портфолио</a></li>
+        <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="#5-section">Акция - проект бесплатно</a></li>
+        <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="#6-section">О компании</a></li>
+        <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="#7-section">Контакты</a></li>
+      </ul>
+    </div>
+  </nav>
 </html>
