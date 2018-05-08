@@ -76,17 +76,17 @@
                 </div>
               </div>
               <div class="calculation__right">
-                <form id="order-calculation" method="POST" action="./script.php">
+                <form id="order-calculation" method="POST" action="">
                   <h3 class="card-title">Закажите бесплатный расчет</h3>
                   <div class="form-inner">
                     <div class="form-row">
-                      <input class="input" type="text" name="name" placeholder="Имя">
+                      <input class="input" type="text" name="name" placeholder="Имя" required>
                       <svg class="user-svg" width="36px" height="44px">
                         <use xlink:href="./assets/images/sprites/sprite.svg#user"></use>
                       </svg>
                     </div>
                     <div class="form-row">
-                      <input class="input" type="tel" name="phone" placeholder="Телефон">
+                      <input class="input" type="tel" name="phone" placeholder="Телефон" required>
                       <svg class="phone-svg" width="31px" height="44px">
                         <use xlink:href="./assets/images/sprites/sprite.svg#phone"></use>
                       </svg>
@@ -97,7 +97,8 @@
                         <path d="M32,16l-6-6v4h-2V8h-6V6h4l-6-6l-6,6h4v2H8v6H6v-4l-6,6l6,6v-4h2v6h6v2h-4l6,6l6-6h-4v-2h6v-6h2v4L32,16z M22,22H10V10h12   V22z"></path>
                       </svg>
                     </div>
-                    <input class="visually-hidden" name="check_bot" value="">
+                    <input name="txtservice" type="hidden" value="Рулонный газон. Заказ бесплатного расчета.">
+                    <input class="valTrFal" name="valTrFal" type="hidden" value="valTrFal_true">
                     <div class="submit-bl">
                       <button class="submit-button bsh-none sm-fsz-1-8rem" type="submit" id="submit"><span>Заказать расчет</span></button>
                     </div>
@@ -115,63 +116,44 @@
       <li class="service__item">
         <div class="service__img-wr" style="background-image: url('./assets/images/content/im_1.jpg'); background-repeat: no-repeat;"><img class="service__img visually-hidden" src="./assets/images/content/im_1.jpg" alt="Устройство газонов от 250 руб/м2" max-width="315"></div>
         <div class="service__descrip"><span>Устройство газонов </br>от 250 руб/м2</span></div>
-        <form id="service1" method="POST" action="./script.php">
-          <input class="visually-hidden" name="gazon" value="Устройство газонов">
-          <div class="submit-bl">
-            <button class="submit-button font-sz-18" type="submit" id="submit"><span>Заказать консультацию</span></button>
-          </div>
-        </form>
+        <div class="submit-bl">
+          <button class="submit-button font-sz-18 open-modalf" type="button" data-service="Устройство газонов"><span>Заказать консультацию</span></button>
+        </div>
       </li>
       <li class="service__item">
         <div class="service__img-wr" style="background-image: url('./assets/images/content/im_2.jpg'); background-repeat: no-repeat;"><img class="service__img visually-hidden" src="./assets/images/content/im_2.jpg" alt="Посадка растений от 300 руб/шт" max-width="315"></div>
         <div class="service__descrip"><span>Посадка растений </br>от 300 руб/шт</span></div>
-        <form id="service2" method="POST" action="./script.php">
-          <input class="visually-hidden" name="posadka_rasteniy" value="посадка растений">
-          <input class="visually-hidden" name="check_bot" value="">
-          <div class="submit-bl">
-            <button class="submit-button font-sz-18" type="submit" id="submit"><span>Заказать консультацию</span></button>
-          </div>
-        </form>
+        <div class="submit-bl">
+          <button class="submit-button font-sz-18 open-modalf" type="button" data-service="Посадка растений"><span>Заказать консультацию</span></button>
+        </div>
       </li>
       <li class="service__item">
         <div class="service__img-wr" style="background-image: url('./assets/images/content/im_3.jpg'); background-repeat: no-repeat;"><img class="service__img visually-hidden" src="./assets/images/content/im_3.jpg" alt="Альпийские горки от 4000 руб/м2" max-width="315"></div>
         <div class="service__descrip"><span>Альпийские горки </br>от 4000 руб/м2</span></div>
-        <form id="service3" method="POST" action="./script.php">
-          <input class="visually-hidden" name="alpiyskie_gorki" value="альпийские горки">
-          <div class="submit-bl">
-            <button class="submit-button font-sz-18" type="submit" id="submit"><span>Заказать консультацию</span></button>
-          </div>
-        </form>
+        <div class="submit-bl">
+          <button class="submit-button font-sz-18 open-modalf" type="button" data-service="Альпийские горки"><span>Заказать консультацию</span></button>
+        </div>
       </li>
       <li class="service__item">
         <div class="service__img-wr" style="background-image: url('./assets/images/content/im_4.jpg'); background-repeat: no-repeat;"><img class="service__img visually-hidden" src="./assets/images/content/im_4.jpg" alt="Проектирование участка от 1300 руб/сотка" max-width="315"></div>
         <div class="service__descrip"><span>Проектирование участка </br>от 1300 руб/сотка</span></div>
-        <form id="service4" method="POST" action="./script.php">
-          <input class="visually-hidden" name="project_uchastka" value="проектирование участка">
-          <div class="submit-bl">
-            <button class="submit-button font-sz-18" type="submit" id="submit"><span>Заказать консультацию</span></button>
-          </div>
-        </form>
+        <div class="submit-bl">
+          <button class="submit-button font-sz-18 open-modalf" type="button" data-service="Проектирование участка"><span>Заказать консультацию</span></button>
+        </div>
       </li>
       <li class="service__item">
         <div class="service__img-wr" style="background-image: url('./assets/images/content/im_5.jpg'); background-repeat: no-repeat;"><img class="service__img visually-hidden" src="./assets/images/content/im_5.jpg" alt="Системы полива от 80000 руб" max-width="315"></div>
         <div class="service__descrip"><span>Системы полива </br>от 80000 руб</span></div>
-        <form id="service5" method="POST" action="./script.php">
-          <input class="visually-hidden" name="poliv_uchastka" value="полив участка">
-          <div class="submit-bl">
-            <button class="submit-button font-sz-18" type="submit" id="submit"><span>Заказать консультацию</span></button>
-          </div>
-        </form>
+        <div class="submit-bl">
+          <button class="submit-button font-sz-18 open-modalf" type="button" data-service="Системы полива"><span>Заказать консультацию</span></button>
+        </div>
       </li>
       <li class="service__item">
         <div class="service__img-wr" style="background-image: url('./assets/images/content/im_6.jpg'); background-repeat: no-repeat;"><img class="service__img visually-hidden" src="./assets/images/content/im_6.jpg" alt="Уход за участком от 9000 руб/месяц" max-width="315"></div>
         <div class="service__descrip"><span>Уход за участком </br>от 9000 руб/месяц</span></div>
-        <form id="service6" method="POST" action="./script.php">
-          <input class="visually-hidden" name="uchod_za_uchastkom" value="уход за участком">
-          <div class="submit-bl">
-            <button class="submit-button font-sz-18" type="submit" id="submit"><span>Заказать консультацию</span></button>
-          </div>
-        </form>
+        <div class="submit-bl">
+          <button class="submit-button font-sz-18 open-modalf" type="button" data-service="Уход за участком"><span>Заказать консультацию</span></button>
+        </div>
       </li>
     </ul>
   </div>
@@ -196,23 +178,23 @@
               </div>
             </div>
             <div class="order-call">
-              <form id="orderCall" method="POST" action="./script.php">
+              <form id="orderCall" method="POST" action="">
                 <h3 class="card-title text-color">Получите бесплатный проект и смету на ваш участок!</h3>
                 <div class="form-inner w-95">
-                  <div class="form-inner"></div>
                   <div class="form-row mb-17">
-                    <input class="input bgc-text-color" type="text" name="name" placeholder="Имя">
+                    <input class="input bgc-text-color" type="text" name="name" placeholder="Имя" required>
                     <svg class="user-svg" width="36px" height="44px">
                       <use xlink:href="./assets/images/sprites/sprite.svg#user"></use>
                     </svg>
                   </div>
                   <div class="form-row mb-17">
-                    <input class="input bgc-text-color" type="tel" name="phone" placeholder="Телефон">
+                    <input class="input bgc-text-color" type="tel" name="phone" placeholder="Телефон" required>
                     <svg class="phone-svg" width="31px" height="44px">
                       <use xlink:href="./assets/images/sprites/sprite.svg#phone"></use>
                     </svg>
                   </div>
-                  <input class="visually-hidden" name="check_bot" value="">
+                  <input name="txtservice" type="hidden" value="Получите бесплатный проект и смету на ваш участок!">
+                  <input class="valTrFal" name="valTrFal" type="hidden" value="valTrFal_true">
                   <div class="submit-bl">
                     <button class="submit-button" type="submit" id="submit"><span>Заказать расчет</span></button>
                   </div>
@@ -259,7 +241,7 @@
           <ul class="contact-links__list">
             <li class="contact-links__item"><a class="contact-links__link" href="tel:+8-846-231-25-91" target="_blank">8 846 231 25 91</a></li>
             <li class="contact-links__item"><a class="contact-links__link" href="tel:+8-909-329-29-11" target="_blank">8 909 329 29 11</a></li>
-            <li class="contact-links__item"><a class="contact-links__link" href="https://www.ld63.ru/" target="_blank">www.ld63.ru</a></li>
+            <li class="contact-links__item"><a class="contact-links__link" href="/">www.ld63.ru</a></li>
           </ul>
         </div>
       </div>
@@ -267,21 +249,54 @@
   </div>
 </section>
     </div>
-  <script type="text/javascript" src="/lansh_pages/app/index.bundle.js"></script></body>
-  <nav class="fat-nav"><a class="hamburg-menu__close" id="closeMenu" href="javascript:void(0)">
-      <svg class="close-svg" width="45" height="40">
-        <use xlink:href="./assets/images/sprites/sprite.svg#close"></use>
-      </svg></a>
-    <div class="fat-nav__wrapper">
-      <ul class="hamburg-menu__list">
-        <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="/">Главная</a></li>
-        <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="#2-section">Рулонный газон</a></li>
-        <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="#3-section">Наши услуги</a></li>
-        <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="#4-section">Портфолио</a></li>
-        <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="#5-section">Акция - проект бесплатно</a></li>
-        <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="#6-section">О компании</a></li>
-        <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="#7-section">Контакты</a></li>
-      </ul>
+    <nav class="fat-nav"><a class="hamburg-menu__close" id="closeMenu" href="javascript:void(0)">
+        <svg class="close-svg" width="45" height="40">
+          <use xlink:href="./assets/images/sprites/sprite.svg#close"></use>
+        </svg></a>
+      <div class="fat-nav__wrapper">
+        <ul class="hamburg-menu__list">
+          <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="/">Главная</a></li>
+          <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="#2-section">Рулонный газон</a></li>
+          <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="#3-section">Наши услуги</a></li>
+          <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="#4-section">Портфолио</a></li>
+          <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="#5-section">Акция - проект бесплатно</a></li>
+          <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="#6-section">О компании</a></li>
+          <li class="hamburg-menu__item"><a class="hamburg-menu__link" href="#7-section">Контакты</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="overlay-f"></div>
+    <div class="popup-f"><a class="close-modal" href="javascript:void(0)">
+        <svg class="closemod-svg" width="30" height="25">
+          <use xlink:href="./assets/images/sprites/sprite.svg#close"></use>
+        </svg></a>
+      <form class="fofm" action="" method="POST" id="formService">
+        <h3 class="card-title bg-orange">Онлайн-заявка</h3>
+        <div class="fofm__wr">
+          <div class="fofm__text"><span>Оставьте ваши данные и мы вам перезвоним</span></div>
+          <input name="name" required type="text" placeholder="Имя">
+          <input name="phone" required type="tel" placeholder="Телефон">
+          <textarea name="txtmessage" maxlength="1400" placeholder="Комментарии..."></textarea>
+          <input id="hidden-form" name="txtservice" type="hidden" value="">
+          <input class="valTrFal" name="valTrFal" type="hidden" value="valTrFal_true">
+          <div class="submit-bl">
+            <button class="submit-button font-sz-18" type="submit" id="submitOrder"><span>Перезвонить мне</span></button>
+          </div>
+        </div>
+      </form>
     </div>
-  </nav>
+    <div class="popup2"><a class="close-modal" href="javascript:void(0)">
+        <svg class="closemod-svg" width="30" height="25">
+          <use xlink:href="./assets/images/sprites/sprite.svg#close"></use>
+        </svg></a>
+      <div class="window">
+        <div class="insText">
+          <h3 class="insText__title">Запрос отправлен</h3>
+          <div class="insText__text"><span>
+              Ваш запрос отправлен.</br>
+              Мы свяжемся с вами в ближайшее время!</span></div>
+        </div>
+      </div>
+    </div>
+  <script type="text/javascript" src="/lansh_pages/app/index.bundle.js"></script></body>
 </html>
