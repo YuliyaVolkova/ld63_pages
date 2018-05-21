@@ -7,7 +7,7 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>"Ландшафтный дизайн в Самаре от студии Марины Климовских"</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="/ld63_pages/icons-86ccd84288b415d6085e0148c2798fe5/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/ld63_pages/icons-86ccd84288b415d6085e0148c2798fe5/favicon-16x16.png"><link rel="shortcut icon" href="/ld63_pages/icons-86ccd84288b415d6085e0148c2798fe5/favicon.ico"><link href="/ld63_pages/assets/css/normalize.css" rel="stylesheet"><link href="/ld63_pages/assets/css/jgallery.min.css" rel="stylesheet"><link href="/ld63_pages/assets/css/styles.index.css" rel="stylesheet"></head>
+  <link href="/ld63_pages/assets/css/normalize.css" rel="stylesheet"><link href="/ld63_pages/assets/css/jgallery.min.css" rel="stylesheet"><link href="/ld63_pages/assets/css/styles.index.css" rel="stylesheet"></head>
   <body>
     <!--[if lt IE 8]> <p class="chromeframe">Похоже, что ты используешь устаревший браузер, друг. Пожалуйста, <a href="http:// browsehappy.com/">скачай новый браузер абсолютно бесплатно</a> или <a href="http://www.google.com/chromeframe/?redirect=true">активируй Google Chrome Frame</a></p> <![endif]-->
     <div class="wrapper">
@@ -17,7 +17,7 @@
               <svg class="menu-svg" width="78px" height="35px">
                 <use xlink:href="./assets/images/sprites/sprite.svg#menu"></use>
               </svg>Меню</a></nav>
-          <div class="logo"><a class="logo__link" href="#2-section"><img class="logo-img" src="./assets/images/decor/astra.png" alt="Астра - студия ландшафтного дизайна"></a></div>
+          <div class="logo"><a class="logo__link" href="/"><img class="logo-img" src="./assets/images/decor/astra.png" alt="Астра - студия ландшафтного дизайна"></a></div>
           <div class="main-title">
             <h1 class="title bg-orange">&nbsp;Ландшафтный дизайн в Самаре&nbsp;</h1><span class="title bg-orange">&nbsp;от студии Марины Климовских&nbsp;</span>
           </div><a class="arrowdown-link" id="move2second" href="#2-section">
@@ -78,16 +78,19 @@
                   <h3 class="card-title">Закажите бесплатный расчет</h3>
                   <div class="form-inner">
                     <div class="form-row">
-                      <input class="input" type="text" name="name" placeholder="Имя" required>
+                      <input class="input" type="text" name="name" data-parsley-minlength="3" placeholder="Имя" data-parsley-required>
                       <svg class="user-svg" width="36px" height="44px">
                         <use xlink:href="./assets/images/sprites/sprite.svg#user"></use>
                       </svg>
                     </div>
                     <div class="form-row">
-                      <input class="input" type="tel" name="phone" placeholder="Телефон" required>
+                      <input class="input" type="tel" name="phone" placeholder="Телефон" data-parsley-phone="" data-parsley-required>
                       <svg class="phone-svg" width="31px" height="44px">
                         <use xlink:href="./assets/images/sprites/sprite.svg#phone"></use>
                       </svg>
+                    </div>
+                    <div class="form-row form-row-dn">
+                      <input class="input" type="text" name="lName" data-parsley-lname="" placeholder="">
                     </div>
                     <div class="form-row">
                       <input class="input sm-fsz-1-8rem" type="text" name="size" placeholder="Размер участка">
@@ -180,18 +183,21 @@
                 <h3 class="card-title text-color">Получите бесплатный проект и смету на ваш участок!</h3>
                 <div class="form-inner w-95">
                   <div class="form-row mb-17">
-                    <input class="input bgc-text-color" type="text" name="name" placeholder="Имя" required>
+                    <input class="input bgc-text-color" type="text" name="name" placeholder="Имя" data-parsley-minlength="3" data-parsley-required>
                     <svg class="user-svg" width="36px" height="44px">
                       <use xlink:href="./assets/images/sprites/sprite.svg#user"></use>
                     </svg>
                   </div>
                   <div class="form-row mb-17">
-                    <input class="input bgc-text-color" type="tel" name="phone" placeholder="Телефон" required>
+                    <input class="input bgc-text-color" type="tel" name="phone" placeholder="Телефон" data-parsley-phone="" data-parsley-required>
                     <svg class="phone-svg" width="31px" height="44px">
                       <use xlink:href="./assets/images/sprites/sprite.svg#phone"></use>
                     </svg>
                   </div>
                   <input name="txtservice" type="hidden" value="Получите бесплатный проект и смету на ваш участок!">
+                  <div class="form-row form-row-dn">
+                    <input class="input" type="text" data-parsley-lname="" name="lName" placeholder="">
+                  </div>
                   <input class="valTrFal" name="valTrFal" type="hidden" value="valTrFal_true">
                   <div class="submit-bl">
                     <button class="submit-button" type="submit"><span>Заказать расчет</span></button>
@@ -272,10 +278,19 @@
         <h3 class="card-title bg-orange">Онлайн-заявка</h3>
         <div class="fofm__wr">
           <div class="fofm__text"><span>Оставьте ваши данные и мы вам перезвоним</span></div>
-          <input name="name" required type="text" placeholder="Имя">
-          <input name="phone" required type="tel" placeholder="Телефон">
-          <textarea name="txtmessage" maxlength="1400" placeholder="Комментарии..."></textarea>
+          <div class="fofm-row">
+            <input name="name" data-parsley-minlength="3" type="text" placeholder="Имя" data-parsley-required>
+          </div>
+          <div class="fofm-row">
+            <input name="phone" data-parsley-phone="" data-parsley-required type="tel" placeholder="Телефон">
+          </div>
+          <div class="fofm-row">
+            <textarea name="txtmessage" data-parsley-maxlength="500" placeholder="Комментарии..."></textarea>
+          </div>
           <input id="hidden-form" name="txtservice" type="hidden" value="">
+          <div class="form-row form-row-dn">
+            <input class="input" type="text" name="lName" data-parsley-lname="" placeholder="">
+          </div>
           <input class="valTrFal" name="valTrFal" type="hidden" value="valTrFal_true">
           <div class="submit-bl">
             <button class="submit-button font-sz-18" type="submit" id="submitOrder"><span>Перезвонить мне</span></button>
